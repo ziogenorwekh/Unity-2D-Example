@@ -1,16 +1,14 @@
 ScriptsOnlyBuild:
   usedScripts:
-    Assembly-CSharp-Editor.dll:
-    - ReadmeEditorBE2
     Assembly-CSharp.dll:
     - EnemyMove
     - GameManager
     - PlayerMove
-    - ReadmeBE2
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridBrushEditor
@@ -241,7 +239,7 @@ ScriptsOnlyBuild:
     className: PlaymodeTestsController
   - hash:
       serializedVersion: 2
-      Hash: 663194e8d798627039f0eac9e997bd72
+      Hash: 3fbb90ef8403047d26bab8414c54cee6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -668,4 +666,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/LSEK/Desktop/Unity 2D Example.exe
+  playerPath: "C:/Users/LSEK/Desktop/\uC0C8 \uD3F4\uB354/Unity 2D Example.exe"

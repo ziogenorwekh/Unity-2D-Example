@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     public Text UIPoint;
     public Text UIStage;
     public GameObject UIRestartBtn;
+    public GameObject UIbreakBtn;
 
     void Update() {
         UIPoint.text = (totalPoint + stagePoint).ToString(); // 점수를 계속 업데이트
@@ -43,7 +44,9 @@ public class GameManager : MonoBehaviour
             Text btnText = UIRestartBtn.GetComponentInChildren<Text>(); // 버튼 텍스트는 자손이므로 InChildren
             btnText.text = "Game Clear!";
             UIRestartBtn.SetActive(true);
-
+            Text breakText = UIbreakBtn.GetComponentInChildren<Text>();
+            breakText.text = "Break?";
+            UIbreakBtn.SetActive(true);
         }
         // total 포인트에 stagePoint를 주고 초기화
         totalPoint += stagePoint;
@@ -91,5 +94,8 @@ public class GameManager : MonoBehaviour
     public void Restart() {
         Time.timeScale = 1; // 재시작하게 되면 timeScale = 1로 시간으로 복구
         SceneManager.LoadScene(0);
+    }
+    public void GameBreak() {
+        Application.Quit();
     }
 }
